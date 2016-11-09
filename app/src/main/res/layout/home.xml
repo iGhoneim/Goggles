@@ -6,4 +6,80 @@
     android:layout_height="match_parent"
     tools:context="info.Goggles.Home">
 
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true" />
+
+
+    <TableLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/picture"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Origin"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="grey"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/bin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bin"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/abin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abin"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow></TableRow>
+
+        <TableRow></TableRow>
+    </TableLayout>
+
 </RelativeLayout>
+
+
