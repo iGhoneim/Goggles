@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Faculty\\semester_9\\gradutaiton_projrcet\\smart_glass\\Android\\Goggles\\Goggles\\openCV310\\src\\main\\aidl\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
+ * Original file: C:\\Users\\Ahmed Hesham\\AndroidStudioProjects\\project\\Goggles\\openCV310\\src\\main\\aidl\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**
