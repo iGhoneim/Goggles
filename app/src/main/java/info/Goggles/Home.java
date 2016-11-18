@@ -187,7 +187,7 @@ public class Home extends Activity implements View.OnClickListener {
     }
 
     private Bitmap bmpOf(Mat mat) {
-             //function by Ghoneim to convert matrix to image
+         //function by Ghoneim to convert matrix to image
         Bitmap bmp = createBitmap(mat.cols(), mat.rows(), ARGB_8888);
         matToBitmap(mat, bmp);
         return bmp;
