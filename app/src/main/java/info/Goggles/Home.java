@@ -164,13 +164,11 @@ public class Home extends Activity implements View.OnClickListener {
     }
 
     private Bitmap originTarget() {
-        //function by Ghoneim to get original image
         mTarget = decodeResource(getResources(), R.drawable.sign);
         return mTarget;
     }
 
     private Bitmap getTarget() {
-        //function by Ghoneim to get current image
         return mTarget;
     }
 
