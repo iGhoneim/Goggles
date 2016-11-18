@@ -182,41 +182,32 @@ public class Home extends Activity implements View.OnClickListener {
         return mat;
     }
 
-    private Bitmap bmpOf(Mat mat)
-    {
+    private Bitmap bmpOf(Mat mat) {
         Bitmap bmp = createBitmap(mat.cols(), mat.rows(), ARGB_8888);
         matToBitmap(mat, bmp);
         return bmp;
     }
-    private Mat copyOf(Mat src)
-    {
+
+    private Mat copyOf(Mat src) {
         Mat dst = new Mat(src, Range.all());
         return dst;
     }
-    private Mat greyOf(Mat src)
-    {
+
+    private Mat greyOf(Mat src) {
         Mat dst = copyOf(src);
         cvtColor(src, dst, COLOR_RGB2GRAY);
         return dst;
     }
-    private Mat binOf(Mat src)
-    {
+
+    private Mat binOf(Mat src) {
         Mat dst = copyOf(src);
         threshold(src, dst, 127, 255, THRESH_BINARY);
         return dst;
     }
 
-    private Mat abinOf(Mat src)
-    {
+    private Mat abinOf(Mat src) {
         Mat dst = copyOf(src);
         adaptiveThreshold(src, dst, 255, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, 7, 5);
         return dst;
-    }
-    private void Nasr()
-    {
-
-    }
-    private void Ghoneim(){
-
     }
 }
