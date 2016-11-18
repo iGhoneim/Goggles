@@ -212,4 +212,11 @@ public class Home extends Activity implements View.OnClickListener {
         adaptiveThreshold(src, dst, 255, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, 7, 5);
         return dst;
     }
+    private void Nasr()
+    {
+
+    }
+    private void Ghoneim(){
+
+    }
 }
