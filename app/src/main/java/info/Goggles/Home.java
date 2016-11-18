@@ -175,51 +175,46 @@ public class Home extends Activity implements View.OnClickListener {
     }
 
     private void showOf(Bitmap bmp) {
-         //function by Ghoneim to show image
         mPicture.setImageBitmap(bmp);
     }
 
     private Mat matOf(Bitmap bmp) {
-         //function by Ghoneim to convert image to matrix
         Mat mat = new Mat(bmp.getHeight(), bmp.getWidth(), CV_8U);
         bitmapToMat(bmp, mat);
         return mat;
     }
 
-    private Bitmap bmpOf(Mat mat) {
-         //function by Ghoneim to convert matrix to image
+    private Bitmap bmpOf(Mat mat)
+    {
         Bitmap bmp = createBitmap(mat.cols(), mat.rows(), ARGB_8888);
         matToBitmap(mat, bmp);
         return bmp;
     }
-
-    private Mat copyOf(Mat src) {
-        //function by Ghoneim to clone image matrix & properties to another one
+    private Mat copyOf(Mat src)
+    {
         Mat dst = new Mat(src, Range.all());
         return dst;
     }
-
-    private Mat greyOf(Mat src) {
-         //function by Ghoneim to apply grey scale conversion
+    private Mat greyOf(Mat src)
+    {
         Mat dst = copyOf(src);
         cvtColor(src, dst, COLOR_RGB2GRAY);
         return dst;
     }
-
-    private Mat binOf(Mat src) { 
-        //function by Ghoneim to apply binarization using threshold
+    private Mat binOf(Mat src)
+    {
         Mat dst = copyOf(src);
         threshold(src, dst, 127, 255, THRESH_BINARY);
         return dst;
     }
 
-    private Mat abinOf(Mat src) {
-        //function by Ghoneim to apply adaptive binarization using threshold
+    private Mat abinOf(Mat src)
+    {
         Mat dst = copyOf(src);
         adaptiveThreshold(src, dst, 255, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY, 7, 5);
         return dst;
     }
-    privete Nasr()
+    private void Nasr()
     {
 
     }
