@@ -34,7 +34,6 @@ import static org.opencv.imgproc.Imgproc.threshold;
 
 public class Home extends Activity implements View.OnClickListener
 {
-
     static final int mRequest = 1010;
     Button mOpen, mReset, mOrg, mGrey, mBin, mABin;
     ImageView mPicture;
